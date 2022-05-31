@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
-
+import { GoogleAuth } from '@codetrix-studio/capacitor-google-auth';
 import { LoginPage } from './login.page';
 
 describe('LoginPage', () => {

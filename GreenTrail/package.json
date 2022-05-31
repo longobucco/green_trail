@@ -22,6 +22,7 @@
     "@awesome-cordova-plugins/background-geolocation": "^5.41.0",
     "@awesome-cordova-plugins/sign-in-with-apple": "^5.41.0",
     "@capacitor-community/capacitor-googlemaps-native": "^1.2.0",
+    "@capacitor-community/http": "^1.4.1",
     "@capacitor/android": "3.5.1",
     "@capacitor/app": "1.1.1",
     "@capacitor/core": "^3.5.1",
