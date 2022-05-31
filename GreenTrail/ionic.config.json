@@ -1,0 +1,8 @@
+{
+  "name": "GreenTrail",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}
