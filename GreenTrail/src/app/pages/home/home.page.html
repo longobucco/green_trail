@@ -7,17 +7,18 @@
   <ion-header collapse="condense">
     <link rel="stylesheet" href="home.page.scss">
     <link rel="script" href="home.page.ts">
+
   </ion-header>
-    <ion-menu   side="start" menuId="first" contentId="main">
+    <ion-menu   side="start" menuId="first" contentId="main" >
       <ion-content>
         <ion-button id="avatar" color="dark" size="large">
-          <ion-img  src="assets/icon/User Images.png"></ion-img>
+          <ion-img  src="assets/icon/User Images.png" (click)="login()"></ion-img>
         </ion-button>
         <p id="km">Km</p>
         <ion-label id="kmL" color="light" >2.5</ion-label>
         <p id="pe">PE</p>
         <ion-label id="peL" color="light" >100</ion-label>
-          <ion-button  color="Dark" fill="clear" id="iMieiPrecorsiButton" >I mie percorsi</ion-button>
+          <ion-button  color="Dark" fill="clear" id="iMieiPrecorsiButton" (click)="caricaMieiPercorsi()">I mie percorsi</ion-button>
           <ion-button color="Dark" fill="clear" id="mappeSalvateButton">Mappe salvate</ion-button>
           <ion-button slot="" color="Dark" id="segnalazionButton" >Segnalazioni</ion-button>
 
@@ -32,25 +33,25 @@
 
 <ion-footer>
 
-  <ion-button  id="searchButton">
-  <ion-icon name="search" class="icon" id="searchIcon"></ion-icon>
+  <ion-button  id="searchButton" mode="ios">
+  <ion-icon name="search" class="icon" id="searchIcon" mode="ios"></ion-icon>
     Search..
   </ion-button>
 
-  <ion-button color="dark" id="elementiSalvatiButton"><ion-img src="assets/icon/bookmark_border_24px.png"></ion-img></ion-button>
-  <ion-button color="dark" id="gpsButton"><ion-img src="assets/icon/Gps%20fixed.png"></ion-img>
+  <ion-button color="dark" id="elementiSalvatiButton" mode="ios"><ion-img src="assets/icon/bookmark_border_24px.png"></ion-img></ion-button>
+  <ion-button color="dark" id="gpsButton" mode="ios"><ion-img src="assets/icon/Gps%20fixed.png"></ion-img>
   </ion-button>
   <div id="searchDiv">
-    <ion-searchbar color="darktrail" class="searchBar"></ion-searchbar>
-    <ion-button color="dark" class="buttonForSearch">Cerca</ion-button>
+    <ion-searchbar color="darktrail" class="searchBar" mode="ios"></ion-searchbar>
+    <ion-button color="dark" class="buttonForSearch" mode="ios">Cerca</ion-button>
     <ion-button class="hikingButton" color="dark"><ion-img src="assets/icon/outline_hiking_black_24dp 1.png"></ion-img></ion-button>
     <ion-button class="mtbButton" color="dark"><ion-img src="assets/icon/icons8-cycling-mountain-bike-64 1.png"></ion-img></ion-button>
     <ion-button class="kayakingButton" color="dark"><ion-img src="assets/icon/outline_kayaking_black_24dp 1.png"></ion-img></ion-button>
     <ion-button class="fishingButton" color="dark"><ion-img src="assets/icon/icons8-pike-50 1.png"></ion-img></ion-button>
     <ion-button class="restaurantButton" color="dark"><ion-img src="assets/icon/outline_restaurant_black_24dp 1.png"></ion-img></ion-button>
     <ion-button class="campingButton" color="dark"><ion-img src="assets/icon/icons8-camping-64 1.png"></ion-img></ion-button>
-   <input type="radio"  id="radioPrincipiante" value="principiante">
-    <label for="radioPrincipiante"></label>
+    <ion-radio id="radioPrincipiante" mode="md"></ion-radio>
+    <label for="radioPrincipiante">ciao</label>
   </div>
 </ion-footer>
 
@@ -58,7 +59,7 @@
 
     <ion-content >
       <ion-menu-toggle >
-        <ion-menu-button color="dark" id="sideBarButton"></ion-menu-button>
+        <ion-menu-button color="dark" id="sideBarButton" mode="md"></ion-menu-button>
       </ion-menu-toggle>
       <div #map id="map"></div>
     </ion-content>

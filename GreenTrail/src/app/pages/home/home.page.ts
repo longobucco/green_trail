@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-
-
+import {Router} from '@angular/router';
 declare let google;
 
 @Component({
@@ -12,7 +11,7 @@ declare let google;
 export class HomePage implements OnInit{
   map: null;
 
-constructor() {
+constructor(private router: Router) {
   }
 
   ionViewDidEnter() {
@@ -36,6 +35,12 @@ constructor() {
      });
 
 
+   }
+   caricaMieiPercorsi(){
+   this.router.navigate(['i-miei-precorsi']);
+   }
+   login(){
+  this.router.navigate(['login']);
    }
 
   loadMap() {
